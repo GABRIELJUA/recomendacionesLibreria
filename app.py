@@ -4,9 +4,8 @@ import joblib
 import logging
 import pandas as pd
 
-
 app = Flask(__name__)
-CORS(app, origins=["http://localhost:4200"])  # 👈 PERMITE CORS solo desde Angular
+CORS(app)  # Permite CORS desde cualquier origen
 
 logging.basicConfig(level=logging.INFO)
 
